@@ -6,7 +6,7 @@ const useCrud = () => {
     const [users, setUsers] = useState()
 
     const getAllUsers = () => {
-        const URL = 'http://users-crud.academlo.tech/users/'
+        const URL = 'https://users-crud.academlo.tech/users/'
         axios.get(URL)
         .then(res => setUsers(res.data))
         .catch(err => console.log(err))
